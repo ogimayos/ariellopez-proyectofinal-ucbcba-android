@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ariel.ventas_moviles.ListClientes">
+    <item android:id="@+id/action_sincroniza" android:title="@string/sincroniza"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/mnuRegClientes" android:title="@string/mnuRegClientes"
+        android:orderInCategory="100" app:showAsAction="never">
+    </item>
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@android:drawable/ic_search_category_default"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/closessesion"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_lock_idle_lock"
+        android:title="@string/close"/>
+
+</menu>

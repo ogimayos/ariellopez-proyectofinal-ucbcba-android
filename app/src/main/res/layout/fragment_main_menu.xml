@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ariel.ventas_moviles.MainMenu$PlaceholderFragment"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDO!!"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/textsample"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textbuttonclientes"
+        android:id="@+id/btnClientes"
+
+        android:padding="15dp"
+        android:background="@drawable/boton_redondo_clientes"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:layout_above="@+id/btnVentas"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textbuttonventas"
+        android:padding="15dp"
+        android:id="@+id/btnVentas"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:width="38dp"
+        android:background="@drawable/boton_redondo_ventas"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/btnClientes"
+        android:layout_alignEnd="@+id/btnClientes"
+        android:layout_alignLeft="@+id/btnClientes"
+        android:layout_alignStart="@+id/btnClientes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textbuttonitems"
+        android:padding="15dp"
+        android:id="@+id/btnitems"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_redondo_items"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:layout_below="@+id/btnVentas"
+        android:layout_alignLeft="@+id/btnVentas"
+        android:layout_alignStart="@+id/btnVentas"
+        android:layout_alignRight="@+id/btnVentas"
+        android:layout_alignEnd="@+id/btnVentas" />
+
+</RelativeLayout>

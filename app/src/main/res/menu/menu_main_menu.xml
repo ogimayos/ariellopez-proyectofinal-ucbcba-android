@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ariel.ventas_moviles.MainMenu">
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="always" />-->
+    <item
+        android:id="@+id/closessesion"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_lock_idle_lock"
+        android:title="@string/close"/>
+
+    <item android:id="@+id/menu_configuracion"
+        android:title="configuracion"
+        app:showAsAction="collapseActionView"
+        android:checked="false" android:visible="true"
+        android:checkable="false"
+        android:enabled="true">
+    </item>
+    <item android:id="@+id/menu_configuracion1"
+        android:title="configuracion1"
+        app:showAsAction="withText"
+        android:checked="false" android:visible="true"
+        android:checkable="false"
+        android:enabled="true">
+    </item>
+
+
+</menu>

@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ariel.ventas_moviles.PedidoItem">
+
+
+
+
+    <TextView android:id="@+id/LblLblIdCentralItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="ID CENTRAL:"
+android:visibility="gone"
+        android:layout_toRightOf="@+id/imagenn"
+
+
+
+        />
+    <TextView android:id="@+id/LblIdCentralItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:text="dos"
+        android:visibility="gone"
+
+        android:layout_toRightOf="@+id/LblLblIdCentralItem"
+        android:layout_marginLeft="10dp"
+
+        />
+
+
+
+
+
+        />
+    <TextView android:id="@+id/LblNombreItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="dos"
+
+
+
+        android:layout_below="@+id/LblLblIdCentralItem"
+        android:layout_marginLeft="5dp"
+
+        />
+
+    <ImageView
+        android:background="@mipmap/ic_item1"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imagenn"
+        android:layout_below="@+id/LblNombreItem"
+        />
+
+    <TextView android:id="@+id/LbllistCodigoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:text="CODIGO:"
+        android:layout_below="@+id/LblNombreItem"
+        android:layout_toRightOf="@+id/imagenn"
+
+
+
+        />
+    <TextView android:id="@+id/LblCodigoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LbllistCodigoItem"
+        android:layout_below="@+id/LblNombreItem"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView android:id="@+id/LblLblSaldoEstimadoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="SALDO ESTIMADO:"
+        android:layout_below="@+id/LbllistCodigoItem"
+        android:layout_toRightOf="@+id/imagenn"
+
+        />
+    <TextView android:id="@+id/LblSaldoEstimadoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblSaldoEstimadoItem"
+        android:layout_below="@+id/LblCodigoItem"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView android:id="@+id/LbllblSaldoRealItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="SALDO REAL:"
+        android:layout_below="@+id/LblLblSaldoEstimadoItem"
+        android:layout_toRightOf="@+id/imagenn"
+        android:visibility="gone"
+
+        />
+    <TextView android:id="@+id/LblSaldoRealItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LbllblSaldoRealItem"
+        android:layout_below="@+id/LblSaldoEstimadoItem"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView android:id="@+id/LblLblPrecioVentaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="PRECIO VENTA:"
+        android:layout_below="@+id/LbllblSaldoRealItem"
+        android:layout_toRightOf="@+id/imagenn"
+
+        />
+    <TextView android:id="@+id/LblPrecioVentaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblPrecioVentaItem"
+        android:layout_below="@+id/LblSaldoRealItem"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView android:id="@+id/LblLblPrecioCostoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="PRECIO COSTO:"
+        android:layout_below="@+id/LblLblPrecioVentaItem"
+        android:layout_toRightOf="@+id/imagenn"
+        android:visibility="gone"
+
+        />
+    <TextView android:id="@+id/LblPrecioCostoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblPrecioCostoItem"
+        android:layout_below="@+id/LblPrecioVentaItem"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

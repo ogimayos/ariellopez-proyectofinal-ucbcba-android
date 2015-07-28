@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ariel.ventas_moviles.PedidoItem">
+
+
+
+
+    <TextView android:id="@+id/LblLblPedidosdetailidItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="ID ITEM:"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/imagenn"
+
+
+
+        />
+    <TextView android:id="@+id/LblPedidosdetailidItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:text="dos"
+        android:visibility="gone"
+
+        android:layout_toRightOf="@+id/LblLblPedidosdetailidItem"
+        android:layout_marginLeft="10dp"
+
+        />
+
+
+
+
+
+    />
+    <TextView android:id="@+id/LblPedidosdetailnombreItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="dos"
+
+
+
+        android:layout_below="@+id/LblPedidosdetailidItem"
+        android:layout_marginLeft="5dp"
+
+        />
+
+    <ImageView
+        android:background="@mipmap/ic_item1"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/imagenn"
+        android:layout_below="@+id/LblPedidosdetailnombreItem"
+        />
+
+    <TextView android:id="@+id/LblLblPedidosdetailcodigoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:text="Codigo:"
+        android:layout_below="@+id/LblPedidosdetailnombreItem"
+        android:layout_toRightOf="@+id/imagenn"
+        />
+    <TextView android:id="@+id/LblPedidosdetailcodigoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblPedidosdetailcodigoItem"
+        android:layout_below="@+id/LblPedidosdetailnombreItem"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView android:id="@+id/LblLblPedidosdetailprecioUnitario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="Precio:"
+        android:layout_below="@+id/LblLblPedidosdetailcodigoItem"
+        android:layout_toRightOf="@+id/imagenn"
+
+        />
+    <TextView android:id="@+id/LblPedidosdetailprecioUnitario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblPedidosdetailprecioUnitario"
+        android:layout_below="@+id/LblPedidosdetailcodigoItem"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView android:id="@+id/LblLblPedidosdetailcantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="Cantidad:"
+        android:layout_below="@+id/LblLblPedidosdetailprecioUnitario"
+        android:layout_toRightOf="@+id/imagenn"
+
+
+        />
+    <TextView android:id="@+id/LblPedidosdetailcantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblPedidosdetailcantidad"
+        android:layout_below="@+id/LblPedidosdetailprecioUnitario"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView android:id="@+id/LblLblPedidosdetailtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:text="Total:"
+        android:layout_below="@+id/LblLblPedidosdetailcantidad"
+        android:layout_toRightOf="@+id/imagenn"
+
+        />
+    <TextView android:id="@+id/LblPedidosdetailtotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_toRightOf="@+id/LblLblPedidosdetailtotal"
+        android:layout_below="@+id/LblPedidosdetailcantidad"
+        android:layout_marginLeft="10dp"
+
+        android:gravity="right" />
+
+
+
+
+</RelativeLayout>

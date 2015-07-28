@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ariel.ventas_moviles.ListVentaPedidosDetail">
+
+
+            <TextView android:id="@+id/LblLblPedidosdetailidPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:text="CODIGO VENTA:"
+                android:layout_marginTop="5dp"
+                />
+    <TextView android:id="@+id/LblPedidosdetailidPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="tres"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/LblLblPedidosdetailidPedido"
+        />
+            <TextView android:id="@+id/LblPedidosDetailidCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="uno"
+                android:layout_below="@+id/LblPedidosdetailidPedido"
+android:visibility="gone"
+
+                />
+
+            <TextView android:id="@+id/LblLblPedidosDetailFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:text="Fecha:"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/LblPedidosDetailidCliente"
+                />
+    <TextView android:id="@+id/LblPedidosDetailFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="uno"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/LblPedidosDetailidCliente"
+        android:layout_toRightOf="@+id/LblLblPedidosDetailFecha"
+        />
+
+            <TextView android:id="@+id/LblPedidosDetailNombreCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+
+                android:textSize="20sp"
+                android:text="dos"
+                android:layout_below="@+id/LblPedidosDetailFecha"
+                android:textColor="#ff1000ff" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listVentaPedidosDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/LblPedidosDetailNombreCliente"
+
+        android:background="#ffd7d7d7" />
+
+</RelativeLayout>

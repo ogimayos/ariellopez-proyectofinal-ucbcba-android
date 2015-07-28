@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#e1fffbbe"
+    >
+                <TextView android:id="@+id/LblLblPedidosidPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="#:"
+                    android:layout_marginTop="3dp"
+                    />
+                <TextView android:id="@+id/LblPedidosidPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="uno"
+                    android:layout_toRightOf="@+id/LblLblPedidosidPedido"
+                    />
+                <TextView android:id="@+id/LblPedidosidCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="uno"
+                    android:visibility="gone"
+
+
+                    />
+                <TextView android:id="@+id/LblLblPedidosFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3sp"
+                    android:text="Fecha:"
+
+                    android:layout_below="@+id/LblLblPedidosidPedido"
+                    />
+                    <TextView android:id="@+id/LblPedidosFecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:text="uno"
+                        android:layout_toRightOf="@+id/LblLblPedidosFecha"
+                        android:layout_below="@+id/LblPedidosidPedido"
+                        />
+
+                <TextView android:id="@+id/LblLblPedidosNombreCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|italic"
+                    android:textSize="15sp"
+
+                    android:text="Cliente:"
+                    android:layout_below="@+id/LblLblPedidosFecha"
+                    />
+    <TextView android:id="@+id/LblPedidosNombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="dos"
+        android:layout_below="@+id/LblPedidosFecha"
+        android:layout_toRightOf="@+id/LblLblPedidosNombreCliente"
+        android:textColor="#ff1000ff" />
+                <TextView android:id="@+id/LblLblPedidosNitCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|italic"
+                    android:textSize="15sp"
+                    android:text="Nit:"
+                    android:layout_below="@+id/LblLblPedidosNombreCliente"
+                    />
+    <TextView android:id="@+id/LblPedidosNitCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="nit"
+        android:layout_below="@+id/LblPedidosNombreCliente"
+        android:layout_toRightOf="@+id/LblLblPedidosNitCliente"
+        android:textColor="#ff1000ff"
+        />
+
+
+
+           </RelativeLayout>

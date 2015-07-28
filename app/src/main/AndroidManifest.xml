@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ariel.ventas_moviles" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <!-- agrgado para mapa BEGIN -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- agregado para mapa END -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- agregado para mapa BEGIN -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBn4zQa5Pcd_fV4ZgsVfrdWVDNbqcWw1kE" />
+
+        <!-- agregado para mapa END -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/title_activity_main_menu"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegClientes"
+            android:label="@string/title_activity_reg_clientes"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.ListClientes" />
+        </activity>
+
+        <provider
+            android:name=".data.ClientesProvider"
+            android:authorities="com.example.ariel.ventas_moviles" />
+
+        <activity
+            android:name=".ListClientes"
+            android:label="@string/title_activity_list_clientes"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainMenu" />
+        </activity>
+        <activity
+            android:name=".mapa"
+            android:label="@string/title_activity_mapa" >
+        </activity>
+        <activity android:name=".SearchResultsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ventaPedidos"
+            android:label="@string/title_activity_venta_pedidos"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ListItems"
+            android:label="@string/title_activity_list_items"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainMenu" />
+        </activity>
+        <activity
+            android:name=".PedidoItem"
+            android:label="@string/title_activity_pedido_item"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ListVentaPedidos"
+            android:label="@string/title_activity_list_venta_pedidos"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainMenu" />
+        </activity>
+        <activity
+            android:name=".ListVentaPedidosDetail"
+            android:label="@string/title_activity_list_venta_pedidos_detail"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ariel.ventas_moviles.MainMenu" />
+        </activity>
+    </application>
+
+</manifest>

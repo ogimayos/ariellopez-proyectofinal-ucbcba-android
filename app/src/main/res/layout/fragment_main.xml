@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:background="@drawable/ic_launcher"
+
+
+    >
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="SAETA-VENTAS"
+    android:id="@+id/LblTitle"
+    android:textStyle="bold"
+    android:textSize="40dp"
+    android:textColor="#ffffba00"
+    android:fontFamily="casual"
+
+    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ingreso a su Cuenta"
+        android:id="@+id/Lblsubtitle"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/LblTitle"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:id="@+id/txtUsername"
+
+android:layout_below="@+id/Lblsubtitle"
+android:background="@drawable/boton_redondo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+
+android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+
+        android:id="@+id/txtPass"
+        android:layout_below="@+id/txtUsername"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignRight="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername"
+        android:background="@drawable/boton_redondo"
+
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+
+        android:hint="PASSWORD"
+        android:textStyle="bold"
+        android:textColorHighlight="#0038ff00" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGRESAR"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtPass"
+        android:background="@drawable/boton_redondo_clientes"
+
+        android:layout_marginTop="10dp"
+android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30px"
+        android:textColor="#ffffffff" />
+
+    <Button
+        style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MAPA"
+        android:id="@+id/btnmapa"
+        android:drawableLeft="@drawable/ic_intro"
+        android:textStyle="bold"
+        android:textSize="20px"
+        android:layout_below="@+id/btnLogin"
+        android:visibility="gone"
+       />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ventas-moviles</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">USUARIO</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_reg_clientes">Registro de Clientes</string>
+    <string name="title_activity_list_clientes">Lista de Clientes</string>
+    <string name="mnuRegClientes">Registro Clientes</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mapa">mapa</string>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="close">Close Session</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_venta_pedido">Registro de Pedido</string>
+    <string name="search_title">Search</string>
+    <string name="app_label">Ventas</string>
+    <string name="search_hint">Search</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="title_activity_venta_pedidos">ventaPedidos</string>
+    <string name="title_activity_list_items">ListItems</string>
+    <string name="title_activity_pedido_item">PedidoItem</string>
+    <string name="action_additem">Listo</string>
+    <string name="title_activity_list_venta_pedidos">ListVentaPedidos</string>
+    <string name="title_activity_list_venta_pedidos_detail">ListVentaPedidosDetail</string>
+    <string name="listo">Listo</string>
+    <string name="sincroniza">Sincroniza</string>
+    <!-- botons del menu principal -->
+    <string name="textbuttonclientes">CLIENTES</string>
+    <string name="textbuttonventas">VENTAS</string>
+    <string name="textbuttonitems">ITEMS</string>
+
+</resources>

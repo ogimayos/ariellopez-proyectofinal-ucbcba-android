@@ -1,0 +1,33 @@
+Applications Memory Usage (kB):
+Uptime: 494746554 Realtime: 1034354743
+
+** MEMINFO in pid 4135 [com.example.ariel.ventas_moviles] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap        0        0        0        0     6468     5751      224
+  Dalvik Heap     2999     2740        0        0    17252    10513     6739
+ Dalvik Other     1512     1368        0        0                           
+        Stack       72       72        0        0                           
+       Cursor       12       12        0        0                           
+    Other dev     1405     1400        4        0                           
+     .so mmap     3812      828     2252        0                           
+    .apk mmap      186        0       36        0                           
+    .ttf mmap       77        0       68        0                           
+    .dex mmap     2423       32     1888        0                           
+   Other mmap       31        4        0        0                           
+      Unknown     2939     2924        0        0                           
+        TOTAL    15468     9380     4248        0    23720    16264     6963
+ 
+ Objects
+               Views:      237         ViewRootImpl:        5
+         AppContexts:        8           Activities:        5
+              Assets:        2        AssetManagers:        2
+       Local Binders:       17        Proxy Binders:       26
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
